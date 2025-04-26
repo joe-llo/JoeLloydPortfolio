@@ -11,6 +11,9 @@
       padding: 0;
       background-color: #f4f4f4;
       text-align: center;
+      min-height: 100vh; 
+  display: flex;
+  flex-direction: column
     }
 
     .container {
@@ -19,6 +22,9 @@
       padding: 20px;
       background: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 100vh;
+      border: 1px solid rgb(0, 0, 0);
+      padding-bottom: 500px; 
     }
 
     .grid {
@@ -41,11 +47,12 @@
     }
 
     .media img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
+      width: 300px;
+      max-width: 1000px;
+      height: 300px;
+      border-radius: 35px;
       cursor: pointer;
+      object-fit: cover;
     }
 
     .media p {
@@ -66,23 +73,31 @@
 
     <div class="grid">
       
-        <div class="media">
-        <a href="project1.html">
-          <img src="assets/photos/IMG_11.png" alt="Project 1 Thumbnail">
-        </a>
-        <p>Showreel </p>
-      </div>
-
+      <div class="media">
+        <h1>Showreel</h1>
+    
+        <!-- Embedded YouTube Video -->
+        <iframe width="45%" height="45%"
+          src="https://www.youtube.com/embed/tnXxEnGSA2s" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+    
+        <div class="description">
+          <p>This highlights some of my recent work, <br/> with a selection of indie projects and demo reworks of famous media.</p>
+        </div>
+    
     <div class="media">
         <a href="project2.html">
-          <img src="assets/photos/IMG_21.png" alt="Project 2 Thumbnail">
+          <img src="assets/IMG_21.png" alt="Project 2 Thumbnail" width="300" height="200">
         </a>
         <p>Interactive Installation</p>
       </div>
 
       <div class="media">
         <a href="project3.html">
-          <img src="assets/photos/IMG_32.png" alt="Project 2 Thumbnail">
+          <img src="assets/IMG_32.png" alt="Project 2 Thumbnail">
+          
         </a>
         <p>Digital effects pedal & MIDI controller</p>
       </div>
