@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 1 - Video Work</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .images img {
+      max-width: 100%;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    a.back-link {
+      text-decoration: none;
+      font-size: 16px;
+      color: #007BFF;
+      border: 1px solid #007BFF;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+    a.back-link:hover {
+      background: #007BFF;
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive ambient installation</h1>
+
+    <!-- Embedded YouTube Video -->
+    <iframe width="50%" height="200"
+      src="https://www.youtube.com/embed/xMGWd-iMh10"
+      frameborder="5"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+
+    <div class="description">
+      <p>This project is an exploration of methods of interacting with music via non-traditional methods.<br/> The use of different interfaces is intended to allow for creative expression sonically without any musical training.<br/><br/> Using different sensors such as a gyroscope and pressure-sensitive strips into arduinos and wifi transmitters<br/> I am able to wirelessly transmit data of physical interactions to a computer. <br/> Here, the data can change parameters of ambient sounscape I created in MaxMSP.<br/><br/> Still a work in progress,amd I hope to incorporate interactive visuals.
+      </p>
+    
+      </div>
+
+    <!-- Project Diagrams -->
+     
+    <!--
+    <div class="images">
+      <img src="diagram1.jpg" alt="Project Diagram 1">
+     <img src="diagram2.jpg" alt="Project Diagram 2">
+    </div>
+     -->
+
+    <a class="back-link" href="index.html">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
